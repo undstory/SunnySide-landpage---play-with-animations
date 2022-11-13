@@ -74,6 +74,12 @@ img {
 }
 .intro__list li {
   margin-left: 4rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid transparent;
+  transition: all 0.5s ease;
+}
+.intro__list li:hover:not(:last-child) {
+  border-bottom: 3px solid white;
 }
 .intro__heading {
   text-align: center;
@@ -89,14 +95,13 @@ img {
   color: white;
   font-size: 5rem;
   letter-spacing: 5px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 .intro__arrow {
   margin: 8rem auto;
 }
 .intro__logo {
-  text-transform: lowercase;
-  font-size: 3rem;
-  font-weight: 600;
+  display: block;
 }
 .intro__btn {
   background-color: white;
@@ -111,6 +116,11 @@ img {
 .intro__btn:hover {
   color: white;
   background-color: rgba(255, 255, 255, 0.5);
+}
+
+.char {
+  transform: translateY(-115px);
+  transition: transform 0.5s;
 }
 
 /*# sourceMappingURL=styles.css.map */

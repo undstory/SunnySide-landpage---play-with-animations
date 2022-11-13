@@ -19,6 +19,13 @@
 
     &__list li {
         margin-left: 4rem;
+        padding-bottom: .5rem;
+        border-bottom: 3px solid transparent;
+        transition: all .5s ease;
+
+        &:hover:not(:last-child) {
+            border-bottom: 3px solid $white;
+        }
     }
 
     &__heading {
@@ -36,16 +43,16 @@
         color: $white;
         font-size: 5rem;
         letter-spacing: 5px;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+
     }
 
     &__arrow {
-        margin: 8rem auto;
+        margin: 8rem auto
     }
 
     &__logo {
-        text-transform: lowercase;
-        font-size: 3rem;
-        font-weight: 600;
+       display: block;
     }
 
     &__btn {
@@ -63,4 +70,9 @@
             background-color: rgba(#fff, 0.5);
         }
     }
+}
+
+.char {
+    transform: translateY(-115px);
+    transition: transform .5s;
 }
