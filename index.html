@@ -12,7 +12,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js" defer></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/TextPlugin.min.js" defer></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/EasePack.min.js" defer></script>
-
+<script src="./gsap.js" defer></script>
     <script src="./scripts.js" defer></script>
 
     <title>Animation</title>
@@ -22,7 +22,24 @@
         <section class="intro">
             <nav class="intro__nav container">
               <a href="#"><img class="intro__logo" src="images/logo.svg" alt="logo of sunnyside" /></a></h1>
+              <button class="intro__toggler" type="button" data-toggle="collapse">
+                <img src="./images/icon-hamburger.svg" alt="hamburger menu" />
+              </button>
                 <ul class="intro__list">
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Services</a>
+                    </li>
+                    <li>
+                        <a href="#">Projects</a>
+                    </li>
+                    <li class="intro__btn">
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+                <ul class="intro__list--mobile hiddens">
                     <li>
                         <a href="#">About</a>
                     </li>
