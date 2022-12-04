@@ -89,6 +89,7 @@
 
     &--mobile {
         display: none;
+        transition: visibility 0.5s, opacity .3s linear;
     }
 
 
@@ -147,7 +148,7 @@
 .hiddens {
     visibility: collapse;
     opacity: 0;
-    transition: visibility .3s, opacity .3s linear;
+    transition: visibility 0.5s, opacity .3s linear;
   }
 
   .visible {
@@ -156,11 +157,17 @@
     transition: visibility 0.5s, opacity 0.5s linear;
   }
 
+  @media all and (max-width: 760px) {
+  .intro {
+    background-image: url(../images/mobile/image-header.jpg);
+    background-size: cover;
+  }
+}
+
   @media all and (max-width: 600px) {
     .intro {
 
-        background-image: url(../images/mobile/image-header.jpg);
-        background-size: contain;
+
 
         &__toggler {
             display: block;
