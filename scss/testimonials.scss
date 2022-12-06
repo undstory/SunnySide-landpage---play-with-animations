@@ -1,0 +1,91 @@
+.testimonials {
+background-color: $white;
+padding: 20rem 3rem;
+
+&__title {
+    color: $grayish;
+    text-transform: uppercase;
+    font-family: $fraunces;
+    font-size: 3rem;
+    letter-spacing: 5px;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 10rem;
+}
+
+&__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5rem;
+    padding: 0 12rem;
+    flex-wrap: wrap;
+}
+
+&__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 30%;
+}
+
+&__img {
+    border-radius: 50%;
+    width: 100px;
+}
+
+&__content {
+    text-align: center;
+    font-size: 2rem;
+    color: $dark;
+    line-height: 1.8;
+    font-weight: bold;
+    margin: 6rem 0;
+}
+
+&__name {
+    font-size: 2.5rem;
+    font-family: $fraunces;
+    font-weight: bold;
+    color: $dark;
+    margin-bottom: 1.8rem;
+}
+
+&__role {
+    font-size: 1.6rem;
+    color: $grayish;
+    text-transform: capitalize;
+}
+
+}
+
+@media all and (max-width: 1360px) {
+    .testimonials {
+        &__wrapper {
+            padding: 0 5rem;
+        }
+    }
+}
+
+@media all and (max-width: 1079px) {
+
+    .testimonials {
+
+        &__wrapper {
+            gap: 8rem;
+            padding: 0;
+        }
+        &__item {
+            width: 45%;
+        }
+    }
+}
+
+@media all and (max-width: 768px) {
+    .testimonials {
+        &__item {
+            width: 55%;
+        }
+    }
+}
