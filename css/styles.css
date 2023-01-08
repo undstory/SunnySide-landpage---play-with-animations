@@ -344,8 +344,7 @@ img {
     font-size: 2rem;
   }
   .main__paragraph {
-    font-size: 1.8rem .main__paragraph --small;
-    font-size-font-size: 1.6rem;
+    font-size: 1.8rem;
   }
 }
 @media all and (max-width: 910px) {
@@ -437,6 +436,20 @@ img {
     width: 85%;
   }
 }
+@media all and (max-width: 520px) {
+  .main__title {
+    font-size: 3rem;
+  }
+  .main__title--small {
+    font-size: 2rem;
+  }
+  .main__link {
+    font-size: 2rem;
+  }
+  .main__paragraph--small {
+    font-size: 1.8rem;
+  }
+}
 .testimonials {
   background-color: white;
   padding: 20rem 3rem;
@@ -502,12 +515,23 @@ img {
     padding: 0;
   }
   .testimonials__item {
-    width: 45%;
+    max-width: 45%;
   }
 }
 @media all and (max-width: 768px) {
+  .testimonials__title {
+    font-size: 2.5rem;
+  }
+  .testimonials__name {
+    font-size: 2rem;
+  }
+  .testimonials__wrapper {
+    gap: 5rem 1rem;
+    flex-direction: column;
+    align-items: center;
+  }
   .testimonials__item {
-    width: 55%;
+    max-width: 80%;
   }
 }
 
